@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package Practice;
 
 public class Java {
     public static void main(String[] args) {
