@@ -1,7 +1,8 @@
-package Practice;
-
-public class Hello {
+public class hello {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        double value = 0;
+        value += 6.6;
+        value += 9.8;
+        System.out.println(value);
     }
 }

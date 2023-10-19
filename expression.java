@@ -16,6 +16,6 @@ public class expression {
 
         double result = (x - 5) / 2.0 + 2 * ((55 - y) / (double) a - (b + 9) / (double) y) / 2.5 + 42;
 
-        System.out.println("result: "+ result);
+        System.out.println("result: " + result);
     }
 }
