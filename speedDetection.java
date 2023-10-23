@@ -8,9 +8,9 @@ public class speedDetection {
         System.out.println("Enter your time(in minits): ");
         double time = input.nextFloat();
 
-        double speed = distance / time;
-        double speedInKmph = (speed / 16.667);
-        String formatetedNumber = String.format("%.2f", speedInKmph);
+        double speed = (distance / time)/16.667;
+        // double speedInKmph = (speed / 16.667);
+        String formatetedNumber = String.format("%.2f", speed);
         System.out.println(formatetedNumber + " KM/H");
         // System.out.printf("%.2f\n", speedInKmph+ "KM/H");
     }

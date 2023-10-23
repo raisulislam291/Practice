@@ -6,17 +6,20 @@ public class guessGame {
         int number = 15;
         Scanner input = new Scanner(System.in);
         System.out.println("Guess a number: ");
-        int guess = input.nextInt();
+        int guess;
+        do {
+            guess = input.nextInt();
 
-        if (guess == number) {
-            System.out.println("""
-                        Congratulation!
-                        You gussed the number correctly.
-                    """);
-        } else if (number > guess) {
-            System.out.println("The number is greater than " + guess);
-        } else {
-            System.out.println("The number is smaller than " + guess);
-        }
+            if (guess == number) {
+                System.out.println("""
+                            Congratulation!
+                            You gussed the number correctly.
+                        """);
+            } else if (number > guess) {
+                System.out.println("The number is greater than " + guess);
+            } else {
+                System.out.println("The number is smaller than " + guess);
+            }
+        } while (guess != number);
     }
 }
